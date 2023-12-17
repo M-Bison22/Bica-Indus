@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<title>BICA INDUS</title>
+		<link rel="stylesheet" href="Style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<section id="banner">
+			<img src="Images/Logo.png" class="logo">
+			<div class="banner-text">
+				<h1>Bica Indus</h1>
+				<p>Designers & Sourcers of Indian Textile and Handicrafts</p>
+			<div class="banner-btn">
+				<a href="#"><span></span>Contents</a>
+				<a href="#"><span></span>Read More</a>
+			</div> 
+			</div>
+		</section>
+
+		<div id="sideNav">
+			<nav>
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">DESIGN DEVELOPMENT</a></li>
+					<li><a href="#">PRODUCT DEVELOPMENT</a></li>
+					<li><a href="#">PRODUCT RANGE</a></li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+			</nav>
+
+		</div>
+		<div id="menuBtn">
+			<img src="Images/Menu.png" id="menu">
+		</div>
+
+		<!--Features-->
+
+		<section id="feature">
+			<div class="title-text">
+				<p>FEATURES</p>
+				<h1>Why Choose Us</h1>
+			</div>
+			<div class="feature-box">
+				<div class="features">
+					<h1>ABOUT US</h1>
+					<div class="features-desc">
+						<div class="feature-icon">
+							<i class="fa fa-A"></i>
+						</div>
+						<div class="feature-text">
+							<p>We, BICA INDUS (designers & sourcers of Indian textile and handicrafts), introduce ourselves as one of the leading and trustworthy merchandising company. As it’s evident, India with its vast culture, rich tradition and growing economy has a lot to offer to the world. But, a strong base and knowledge about the country is required to grow and excel in any business. We have gained expertise as sourcing agents as we have a large vendor base & experience on our side to serve you better.</p>
+						</div>
+					</div>
+					<h1>OUR AIM</h1>
+					<div class="features-desc">
+						<div class="feature-icon">
+							<i class="fa fa-dollar"></i>
+						</div>
+						<div class="feature-text">
+							<p>we have established ourselves with presenting wide range of products at the best price and best possible quality.</p>
+						</div>
+					</div>
+					<h1>CONTACT US</h1>
+					<div class="features-desc">
+						<div class="feature-icon">
+							<i class="fa fa-dollar"></i>
+						</div>
+						<div class="feature-text">
+							<p>9810404120<br>7042892345</p>
+						</div>
+					</div>
+				</div>
+				<div class="features-img">
+					<img src="Images/Floor.jpeg">
+				</div>
+			</div>
+		</section>
+
+		<script>
+			var menuBtn = document.getElementById("menuBtn")
+			var sideNav = document.getElementById("sideNav")
+			var menu = document.getElementById("menu")
+
+			sideNav.style.right = "-250px";
+
+			menuBtn.onclick = function() {
+				if(sideNav.style.right == "-250px") {
+					sideNav.style.right = "0";
+					menu.src = "Images/Close.png"
+				}
+				else {
+					sideNav.style.right = "-250px";
+					menu.src = "Images/Menu.png";
+				}
+			}
+		</script>
+	</body>
+</html>
